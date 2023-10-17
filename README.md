@@ -46,8 +46,8 @@ The **TEST DRIVEN DECISSION** TDD with Rspec & mocks in Ruby: Explore test-drive
 
 > The key features of this project includes.
 
-- **A class that represents the entire class.**
-- **A module that represents the implementation of a subset of the functionality.**
+- **A class called solver that contains the test methods**
+- **A test file that conducts the tests of method behavious**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,7 +80,7 @@ In order to run this project you need:
 Clone this repository to your desired folder by using this 👇️ command :
 
 ```
-git clone https://github.com/ethred/OOP_schoo_library
+git clone https://github.com/ngalamac/test-driven-decision.git
 ```
 
 ### Install
@@ -88,7 +88,7 @@ git clone https://github.com/ethred/OOP_schoo_library
 Go to the project directory:
 
 ```
- cd OOP_schoo_library
+ cd test-driven-decision
 ```
 
 Before to run the program, verify that you have Ruby installed on your OS running the following command:
@@ -106,12 +106,18 @@ It should display the Ruby version that is currently installed. If this does not
 To run the project, execute the following command:
 
 ```
-ruby decode.rb
+cd tdd/
+```
+```
+bundle exec rspec solver_spec.rb
 ```
 
 ### Run tests
 
-- Tests are not applicable in this project at the moment.
+- Run the following test command in your test file directory
+```
+bundle exec rspec
+```
 
 ### Deployment
 
@@ -141,11 +147,12 @@ ruby decode.rb
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Here are some future features that could be added to the School Library Management System in the future.
+> Here are some future features that could be added to this project.
 
-- **Decode longer messages:** This would help us improve the module and class much better.
+- **Add more classes and methods:**
 
-The specific features that are added will depend on the needs and wants of the users.
+- **Include snapshots in the test process for better viewing:**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +162,7 @@ The specific features that are added will depend on the needs and wants of the u
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/ngalamac/test-driven-decision/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
