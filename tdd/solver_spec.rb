@@ -19,4 +19,29 @@ describe Solver do
     end
   end
 
+  # Testing for reverse method
+  describe '#reverse' do
+    it 'reverses a word, returns "olleh" for the word "hello"' do
+      expect(Solver.reverse('hello')).to eql('olleh')
+    end
+  end
+
+  # Testing for fizzbuzz method
+  describe '#fizzbuzz' do
+    it 'returns "fizz" when N is divisible by 3' do
+      expect(Solver.fizzbuzz(3)).to eql('fizz')
+    end
+
+    it 'returns "buzz" when N is divisible by 5' do
+      expect(Solver.fizzbuzz(5)).to eql('buzz')
+    end
+
+    it 'returns "fizzbuzz" when N is divisible by 3 and 5' do
+      expect(Solver.fizzbuzz(15)).to eql('fizzbuzz')
+    end
+
+    it 'returns N as a string when N is not divisible by 3 or 5' do
+      expect(Solver.fizzbuzz(7)).to eql('7')
+    end
+  end
 end
