@@ -12,4 +12,13 @@ class Solver
   def self.reverse(word)
     word.reverse
   end
+
+  def self.fizzbuzz(numb)
+    return 'fizzbuzz' if (numb % 15).zero?
+    return 'fizz' if (numb % 3).zero?
+    return 'buzz' if (numb % 5).zero?
+
+    numb.to_s
+  end
+  
 end
