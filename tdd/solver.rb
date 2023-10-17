@@ -20,5 +20,4 @@ class Solver
 
     numb.to_s
   end
-  
 end
